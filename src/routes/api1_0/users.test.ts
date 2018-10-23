@@ -9,7 +9,7 @@ let server;
 describe('Users', () => {
     before(() => {
         server = app.listen(3000)
-        userRouter(app);
+        app.use(userRouter.routes());
     })
     after(() => {
         server.close();

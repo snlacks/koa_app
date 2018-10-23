@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc -p tsconfig.json && mocha -R spec src/**/*.test.js",
-    "start": "tsc -p tsconfig.json && node src/index.js"
+    "dev": "tsc -p tsconfig.json && node --inspect-brk=12345 src/index.js"
   },
   "author": "Steven Lacks <snlacks@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@types/es6-promise": "^3.3.0",
+    "bcrypt": "^3.0.2",
+    "class-validator": "^0.9.1",
     "koa": "^2.5.3",
     "koa-body": "^4.0.4",
     "koa-logger": "^3.2.0",
