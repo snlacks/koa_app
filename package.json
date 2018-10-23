@@ -4,8 +4,8 @@
   "description": "A really simple koa app. I use this to prototype stuff.",
   "main": "index.js",
   "scripts": {
-    "test": "tsc -p tsconfig.json && mocha -R spec test.js",
-    "start": "tsc -p tsconfig.json && node index.js"
+    "test": "tsc -p tsconfig.json && mocha -R spec src/**/*.test.js",
+    "start": "tsc -p tsconfig.json && node src/index.js"
   },
   "author": "Steven Lacks <snlacks@gmail.com>",
   "license": "ISC",
