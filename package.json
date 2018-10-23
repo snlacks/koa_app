@@ -1,14 +1,14 @@
 {
   "name": "koa-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A really simple koa app. I use this to prototype stuff.",
   "main": "index.js",
   "scripts": {
     "test": "tsc -p tsconfig.json && mocha -R spec test.js",
     "start": "tsc -p tsconfig.json && node index.js"
   },
   "author": "Steven Lacks <snlacks@gmail.com>",
-  "license": "LICENSE.txt",
+  "license": "ISC",
   "dependencies": {
     "@types/es6-promise": "^3.3.0",
     "koa": "^2.5.3",

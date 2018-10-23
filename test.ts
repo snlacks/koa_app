@@ -8,9 +8,11 @@ describe('App', () => {
     after(() => {
         server.close();
     });
+
     it('should run', async() => {
         expect(true).to.be.true;
     });
+
     it('should get', async() => {
         await request(server)
             .get('/')
