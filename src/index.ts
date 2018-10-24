@@ -1,7 +1,9 @@
 import views = require('koa-views');
 import logger = require('koa-logger');
 import koaBody = require('koa-body');
-const router = require('koa-router')();
+import Router from 'koa-router';
+
+const router = Router();
 
 import apiv1_0Router from './routes/api1_0/';
 
